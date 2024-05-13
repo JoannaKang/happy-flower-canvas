@@ -8,6 +8,16 @@
   </head>
   <body>
     <script type="module" src="/main.js"></script>
-    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <label for="size">Choose size</label>
+    <select name="size" id="size" onchange="getSizeValue()">
+      <option value="-4">Extra Small</option>
+      <option value="-2">Small</option>
+      <option value="1" selected>Original</option>
+      <option value="2">Medium</option>
+      <option value="4">Large</option>
+      <option value="6">Extra Large</option>
+    </select>
+    <canvas id="canvas"></canvas>
   </body>
 </html>
