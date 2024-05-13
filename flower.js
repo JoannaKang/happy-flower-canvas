@@ -1,15 +1,6 @@
-function drawFlower(size) {
-  const canvas = document.getElementById("canvas");
-  canvas.width = 250 * (1 + size * 0.1);
-  canvas.height = 250 * (1 + size * 0.1);
-  const ctx = canvas.getContext("2d");
-  const radius = canvas.width * 0.15;
+function drawFlower(c, radius, ctx) {
   const scaleFactor = radius / 70;
   ctx.lineWidth = 5 * scaleFactor;
-
-  // define canvas size
-  const c = [canvas.width / 2, canvas.height / 2];
-  // size of flower
 
   // flower petals
   const colors = [

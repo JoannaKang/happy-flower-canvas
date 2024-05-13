@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -10,14 +9,16 @@
     <script type="module" src="/main.js"></script>
 
     <label for="size">Choose size</label>
-    <select name="size" id="size" onchange="getSizeValue()">
-      <option value="-4">Extra Small</option>
-      <option value="-2">Small</option>
-      <option value="1" selected>Original</option>
-      <option value="2">Medium</option>
-      <option value="4">Large</option>
-      <option value="6">Extra Large</option>
+    <select name="size" id="size">
+      <option selected disabled>Select size</option>
+      <option value="1">Extra Small</option>
+      <option value="1.25">Small</option>
+      <option value="1.5">Original</option>
+      <option value="1.75">Medium</option>
+      <option value="2">Large</option>
+      <option value="2.25">Extra Large</option>
     </select>
+    <!-- <div id="canvasContainer"></div> -->
     <canvas id="canvas"></canvas>
   </body>
 </html>
